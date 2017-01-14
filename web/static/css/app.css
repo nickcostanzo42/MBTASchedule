@@ -1,0 +1,14 @@
+/* This file is for your main application css. */
+#MBTA-title {
+  text-align: center;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+body {
+  background-color: black;
+  font-family: 'Russo One', sans-serif;
+  color: #91db11;
+}
