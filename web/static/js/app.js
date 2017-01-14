@@ -63,6 +63,10 @@ class Time extends React.Component {
     <div className="container">
         <h1 id="MBTA-title">MBTA Commuter Rail Lines</h1>
       <div className="row">
+        <h3 id="MBTA-title" className="col s6">Current Time:</h3>
+        <h3 id="MBTA-title" className="cols s6">Current Date:</h3>
+      </div>
+      <div className="row">
         <h3 id="MBTA-title" className="col s6">{usHour(current_hour)}:{correctMinutes(current_minutes)} {ampm(current_hour)}</h3>
         <h3 id="MBTA-title" className="cols s6">{current_month + 1}-{current_date}-{current_year + 1900}</h3>
       </div>

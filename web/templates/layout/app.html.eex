@@ -24,7 +24,7 @@
 
     </div> <!-- /container -->
     <p>Created By: Nick Costanzo</p>
-    <p>Using Phoenix and React</p>
+    <p>Using Phoenix and React (and a ton of packages for each)</p>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
