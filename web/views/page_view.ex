@@ -46,10 +46,10 @@ defmodule MbtaSchedule.PageView do
         time = String.to_integer(trainObj["Scheduled"])
         dateTime = :calendar.gregorian_seconds_to_datetime(time)
         regularTime = elem(dateTime, 1)
-        # elem(regularTime, 1)
-        if (elem(regularTime, 1) < 10) do
-          minutes = {:ok, "0#{elem(regularTime, 0)}"}
-          elem(minutes, 1)
+        minutes = elem(regularTime, 1)
+        if (minutes < 10) do
+          minutesnew = {:ok, "0#{minutes}"}
+          elem(minutesnew, 1)
         else
           elem(regularTime, 1)
         end
