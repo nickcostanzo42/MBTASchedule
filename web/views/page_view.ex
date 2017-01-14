@@ -93,7 +93,7 @@ defmodule MbtaSchedule.PageView do
           late = {:ok, trainObj["Lateness"]}
           lateTime = elem(late, 1)
           lateTime = div(String.to_integer(lateTime), 60)
-          lateTime = "#{lateTime} minutes late"
+          lateTime = "#{lateTime} minute delay"
         end
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
