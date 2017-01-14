@@ -5,7 +5,7 @@
 <div class="row">
 <p class="col s2">Greenbush</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_1.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_1.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_1.json")%></p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_1.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_1.json")%> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_1.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_1.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_1.json")%></p>
 </div>
@@ -13,7 +13,7 @@
 <div class="row">
 <p class="col s2">Kingston/ Plymouth</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_2.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_2.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_2.json") %> </p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_2.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_2.json") %> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_2.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_2.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_2.json")%></p>
 </div>
@@ -21,7 +21,7 @@
 <div class="row">
 <p class="col s2">Middleborough/ Lakeville</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_3.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_3.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_3.json") %></p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_3.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_3.json") %> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_3.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_3.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_3.json")%></p>
 </div>
@@ -29,7 +29,7 @@
 <div class="row">
 <p class="col s2">Fairmount</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_4.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_4.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_4.json") %></p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_4.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_4.json") %> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_4.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_4.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_4.json")%></p>
 </div>
@@ -37,7 +37,7 @@
 <div class="row">
 <p class="col s2">Providence/ Stoughton</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_5.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_5.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_5.json") %></p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_5.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_5.json") %> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_5.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_5.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_5.json")%></p>
 </div>
@@ -45,7 +45,7 @@
 <div class="row">
 <p class="col s2">Franklin</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_6.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_6.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_6.json") %></p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_6.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_6.json") %> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_6.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_6.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_6.json")%></p>
 </div>
@@ -53,7 +53,7 @@
 <div class="row">
 <p class="col s2">Needham</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_7.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_7.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_7.json") %></p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_7.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_7.json") %> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_7.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_7.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_7.json")%></p>
 </div>
@@ -61,7 +61,7 @@
 <div class="row">
 <p class="col s2">Framingham/ Worcester</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_8.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_8.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_8.json") %></p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_8.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_8.json") %> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_8.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_8.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_8.json")%></p>
 </div>
@@ -69,7 +69,7 @@
 <div class="row">
 <p class="col s2">Fitchburg</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_9.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_9.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_9.json") %></p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_9.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_9.json") %> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_9.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_9.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_9.json")%></p>
 </div>
@@ -77,7 +77,7 @@
 <div class="row">
 <p class="col s2">Lowell</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_10.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_10.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_10.json") %></p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_10.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_10.json") %> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_10.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_10.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_10.json")%></p>
 </div>
@@ -85,7 +85,7 @@
 <div class="row">
 <p class="col s2">Haverhill</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_11.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_11.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_11.json") %></p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_11.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_11.json") %> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_11.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_11.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_11.json")%></p>
 </div>
@@ -93,7 +93,7 @@
 <div class="row">
 <p class="col s2">Newburyport/ Rockport</p>
   <p class="col s4"><%= destination("http://developer.mbta.com/lib/RTCR/RailLine_12.json") %></p>
-  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_12.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_12.json") %></p>
+  <p class="col s2"><%= departureTimeHour("http://developer.mbta.com/lib/RTCR/RailLine_12.json") %>:<%= departureTimeMinutes("http://developer.mbta.com/lib/RTCR/RailLine_12.json") %> <%= ampm("http://developer.mbta.com/lib/RTCR/RailLine_12.json") %></p>
   <p class="col s2"><%= trainNum("http://developer.mbta.com/lib/RTCR/RailLine_12.json") %></p>
   <p class="col s2"><%= status("http://developer.mbta.com/lib/RTCR/RailLine_12.json")%></p>
 </div>
