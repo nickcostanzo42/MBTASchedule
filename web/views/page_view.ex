@@ -86,12 +86,14 @@ defmodule MbtaSchedule.PageView do
         json_input = body
         {status, list} = JSON.decode(json_input)
         trainObj = hd(list["Messages"])
-        if (trainObj["Lateness"] === "0" || trainObj["Lateness"] === nil) do
+        if (trainObj["Lateness"] === "0" || trainObj["Lateness"] === "") do
           onTime = {:ok, "on time"}
           elem(onTime, 1)
         else
-          onTime = {:error, trainObj["Lateness"]}
-          elem(onTime, 1)
+          late = {:ok, trainObj["Lateness"]}
+          lateTime = elem(late, 1)
+          lateTime = div(String.to_integer(lateTime), 60)
+          lateTime = "#{lateTime} minutes late"
         end
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
