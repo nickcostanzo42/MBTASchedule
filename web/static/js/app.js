@@ -33,13 +33,29 @@ class Time extends React.Component {
     var current_date = date.getDate();
     var current_month = date.getMonth();
     var current_year = date.getYear();
+    function ampm(time){
+      if (time < 11) {
+        return "A.M."
+      } else {
+        return "P.M."
+      }
+    }
+
+    function usHour(time){
+      if (time >= 13){
+        return time - 12
+      } else {
+        return time
+      }
+    }
+
   return (
     <div>
 
     <div className="container">
         <h1 id="MBTA-title">MBTA Commuter Rail Lines</h1>
       <div className="row">
-        <h3 id="MBTA-title" className="col s6">{current_hour}:{current_minutes}</h3>
+        <h3 id="MBTA-title" className="col s6">{usHour(current_hour)}:{current_minutes} {ampm(current_hour)}</h3>
         <h3 id="MBTA-title" className="cols s6">{current_month + 1}-{current_date}-{current_year + 1900}</h3>
       </div>
         <div className="row">
