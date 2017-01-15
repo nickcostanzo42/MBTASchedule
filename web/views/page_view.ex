@@ -11,7 +11,7 @@ defmodule MbtaSchedule.PageView do
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
       {:error, %HTTPoison.Error{reason: reason}} ->
-        IO.inspect reason
+        "nothing"
     end
   end
 
@@ -36,7 +36,7 @@ defmodule MbtaSchedule.PageView do
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
       {:error, %HTTPoison.Error{reason: reason}} ->
-        IO.inspect reason
+        "nothing"
     end
   end
 
@@ -59,7 +59,7 @@ defmodule MbtaSchedule.PageView do
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
       {:error, %HTTPoison.Error{reason: reason}} ->
-        IO.inspect reason
+        "nothing"
     end
   end
 
@@ -79,7 +79,7 @@ defmodule MbtaSchedule.PageView do
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
       {:error, %HTTPoison.Error{reason: reason}} ->
-        IO.inspect reason
+        "nothing"
     end
   end
 
@@ -101,7 +101,7 @@ defmodule MbtaSchedule.PageView do
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
       {:error, %HTTPoison.Error{reason: reason}} ->
-        IO.inspect reason
+        "nothing"
     end
   end
 
@@ -126,7 +126,7 @@ defmodule MbtaSchedule.PageView do
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
       {:error, %HTTPoison.Error{reason: reason}} ->
-        IO.inspect reason
+        "nothing"
     end
   end
 
