@@ -25,10 +25,13 @@ defmodule MbtaSchedule.PageView do
         dateTime = :calendar.gregorian_seconds_to_datetime(time)
         regularTime = elem(dateTime, 1)
         est = elem(regularTime, 0) - 5
-        if (est <= 12) do
-          est
-        else
-          est - 12
+        cond do
+          est <= 0 ->
+            est + 12
+          est <= 12 ->
+            est
+          est ->
+            est - 12
         end
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
@@ -112,12 +115,13 @@ defmodule MbtaSchedule.PageView do
         dateTime = :calendar.gregorian_seconds_to_datetime(time)
         regularTime = elem(dateTime, 1)
         est = elem(regularTime, 0) - 5
-        if (est > 11) do
-          pm = {"P.M."}
-          elem(pm, 0)
-        else
-          am = {"A.M."}
-          elem(am, 0)
+        cond do
+          est < 0 ->
+            "P.M."
+          est <= 11 ->
+            "A.M."
+          est >= 12 ->
+            "P.M."
         end
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
