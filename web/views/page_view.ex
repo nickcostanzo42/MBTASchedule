@@ -6,8 +6,8 @@ defmodule MbtaSchedule.PageView do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
         json_input = body
         {status, list} = JSON.decode(json_input)
-        trainObj = hd(list["Messages"])
-        trainObj["Destination"]
+          trainObj = (hd(list["Messages"]))
+          trainObj["Destination"]
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
       {:error, %HTTPoison.Error{reason: reason}} ->
