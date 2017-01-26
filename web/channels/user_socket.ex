@@ -5,7 +5,7 @@ defmodule MbtaSchedule.UserSocket do
   # channel "room:*", MbtaSchedule.RoomChannel
 
   ## Transports
-  transport :websocket, Phoenix.Transports.WebSocket
+  transport :websocket, Phoenix.Transports.WebSocket,
     timeout: 45_000
   end
   # transport :longpoll, Phoenix.Transports.LongPoll
