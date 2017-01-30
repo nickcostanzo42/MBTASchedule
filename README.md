@@ -1,9 +1,9 @@
 # MbtaSchedule
 
-This is a lightweight app I built in the Phoenix framework.  It pulls the data about train time for the Boston commuter rail from their
-JSON data-feeds and populates the with accurate times, destinations, and late status.
+This is a lightweight app I built in the Phoenix framework.  It pulls data about train times for the Boston commuter rail from MBTA's
+JSON data-feeds and populates the app with EST times for trains, destinations, and late status'.
 
-I also used React to create the real-time and date feeds on the page.
+I also used React to create the real-time and date at the top of the page.
 
 To start your Phoenix app:
 
